@@ -18,13 +18,13 @@ export default function App() {
   if (app) {
     return (
       <div className="App">
-        <h1>{app.date}</h1>
-        <h4>{app.explanation}</h4>
-        <h1>{app.hdurl}</h1>
-        <h1>{app.media_type}</h1>
-        <h1>{app.service_version}</h1>
         <h1>{app.title}</h1>
-        <h1>{app.url}</h1>
+        <h4>{app.explanation}</h4>
+        <h4>{app.media_type}</h4>
+        <h3>{app.service_version}</h3>
+        <h2>{app.date}</h2>
+        <h4>{app.url}</h4>
+        <h4>{app.hdurl}</h4>
         <img src={app.url} alt="Logo" />
       </div>
     );
