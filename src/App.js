@@ -19,7 +19,6 @@ export default function App() {
   if (app) {
     return (
       <div className="App">
-        <h1>API_KEY: {process.env.REACT_APP_API_KEY}</h1>
         <h1>{app.title}</h1>
         <h4>{app.explanation}</h4>
         <h4>{app.media_type}</h4>
