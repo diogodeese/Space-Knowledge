@@ -1,14 +1,15 @@
-import "./App.css";
-import axios from "axios";
 import { useEffect, useState } from "react";
+import axios from "axios";
+import "./App.css";
 
 export default function App() {
   const [app, setApp] = useState(null);
 
+
   useEffect(() => {
     axios
       .get(
-        "https://api.nasa.gov/planetary/apod?api_key=G1B8m5s7pM0Y0Y7l7zMuDGC4UzvF1u9ldcFAhVSt"
+        "https://api.nasa.gov/planetary/apod?api_key="+process.env.REACT_APP_API_KEY
       )
       .then((res) => {
         setApp(res.data);
@@ -18,6 +19,7 @@ export default function App() {
   if (app) {
     return (
       <div className="App">
+        <h1>API_KEY: {process.env.REACT_APP_API_KEY}</h1>
         <h1>{app.title}</h1>
         <h4>{app.explanation}</h4>
         <h4>{app.media_type}</h4>
