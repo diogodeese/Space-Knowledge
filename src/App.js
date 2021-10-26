@@ -9,7 +9,7 @@ export default function App() {
   useEffect(() => {
     axios
       .get(
-        "https://api.nasa.gov/planetary/apod?api_key="+process.env.REACT_APP_API_KEY
+        "https://api.nasa.gov/planetary/apod?date=2020-12-25&api_key="+process.env.REACT_APP_API_KEY
       )
       .then((res) => {
         setApp(res.data);
