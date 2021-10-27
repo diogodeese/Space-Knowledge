@@ -13,8 +13,8 @@ export default function PictureDay() {
       {loading ? (
         <div>...Loading</div>
       ) : (
-        <div>
-          <h1>{data.title}</h1>
+        <div className="PictureDay-container">
+          <h1 className="PictureDay-title">{data.title}</h1>
           <h4>{data.explanation}</h4>
 
           {data.media_type === "video" && (
@@ -24,7 +24,7 @@ export default function PictureDay() {
           )}
 
           {data.media_type === "image" && (
-            <div>
+            <div className="PictureDay-image-container">
               <img src={data.url} alt="space-img" />
             </div>
           )}

@@ -3,5 +3,21 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color: red;
+}
+
+.PictureDay-container {
+  width: 90%;
+  margin: 50px;
+}
+
+.PictureDay-title {
+  text-align: center;
+  margin: 25px;
+  color: #7259ff;
+}
+
+.PictureDay-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
