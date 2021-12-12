@@ -7,4 +7,4 @@
 <p align="center">
 </p>
 
-![Demo](https://github.com/diogodeese/Portfolio/blob/master/src/assets/Demo.png)
+![Demo](https://github.com/diogodeese/Space-Knowledge/blob/master/src/assets/Demo.png)
