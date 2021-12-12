@@ -15,19 +15,27 @@ export default function PictureDay() {
       ) : (
         <div className="PictureDay-container">
           <h1 className="PictureDay-title">{data.title}</h1>
-          <h4>{data.explanation}</h4>
+          <h4 className="PictureDay-description">{data.explanation}</h4>
 
-          {data.media_type === "video" && (
-            <div>
+          <div className="PictureDay-content-container">
+            {data.media_type === "video" && (
               <ReactPlayer url={data.url} volume="0.05" controls="true" />
-            </div>
-          )}
+            )}
 
-          {data.media_type === "image" && (
-            <div className="PictureDay-image-container">
-              <img src={data.url} alt="space-img" />
-            </div>
-          )}
+            {data.media_type === "image" && (
+              <div>
+                <img
+                  src={data.url}
+                  alt="space-img"
+                  style={{
+                    borderRadius: 15,
+                    maxWidth: "100%",
+                    maxHeight: "100%",
+                  }}
+                />
+              </div>
+            )}
+          </div>
         </div>
       )}
     </div>
