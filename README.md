@@ -1,8 +1,8 @@
 <h1 align="center">
-  diogodeese.com
+  Space Knowledge
 </h1>
 <p align="center">
-  Hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  Made with <a href="https://api.nasa.gov/" target="_blank">Nasa API Astronomy Picture of the Day</a>
 </p>
 <p align="center">
 </p>
