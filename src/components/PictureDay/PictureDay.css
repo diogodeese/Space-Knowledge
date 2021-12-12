@@ -14,7 +14,7 @@
 
 .PictureDay-title {
   text-align: center;
-  font-size: 40px;
+  font-size: 36px;
   padding: 50px;
   margin: 25px;
   color: #1f1f1f;
@@ -33,4 +33,27 @@
   align-items: center;
   justify-content: center;
   margin: 25px;
+}
+
+@media only screen and (max-width: 900px) {
+  .PictureDay-title {
+    font-size: 5vw;
+    padding: 20px;
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .PictureDay-title {
+    font-size: 5vw;
+  }
+
+  .PictureDay-description {
+    font-size: 3vw;
+    margin-bottom: 25px;
+  }
+
+  .PictureDay-content-container {
+    margin: 0px;
+  }
 }

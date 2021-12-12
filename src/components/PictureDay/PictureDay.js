@@ -23,7 +23,7 @@ export default function PictureDay() {
             )}
 
             {data.media_type === "image" && (
-              <div>
+              <div style={{ marginInline: "10%" }}>
                 <img
                   src={data.url}
                   alt="space-img"
