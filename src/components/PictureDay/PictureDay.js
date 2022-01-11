@@ -29,8 +29,8 @@ export default function PictureDay() {
                   alt="space-img"
                   style={{
                     borderRadius: 15,
-                    maxWidth: "100%",
-                    maxHeight: "100%",
+                    width: 720,
+                    maxHeight: 480,
                   }}
                 />
               </div>

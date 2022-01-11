@@ -8,23 +8,22 @@
 }
 
 .PictureDay-container {
-  width: 90%;
+  width: 100%;
   height: 100%;
 }
 
 .PictureDay-title {
   text-align: center;
-  font-size: 36px;
-  padding: 50px;
-  margin: 25px;
+  font-size: 30px;
+  padding: 25px;
   color: #1f1f1f;
 }
 
 .PictureDay-description {
   text-align: center;
-  padding: 25px;
-  margin-bottom: 50px;
-  font-size: 20px;
+  padding-inline: 150px;
+  margin: 25px;
+  font-size: 18px;
   color: #1f1f1f;
 }
 
@@ -32,7 +31,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 25px;
+  margin: 50px;
 }
 
 @media only screen and (max-width: 900px) {
