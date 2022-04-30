@@ -1,14 +1,14 @@
 import React from "react";
 import { render } from "react-dom";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
-import "./index.css";
+import GlobalStyles from "./components/utils/GlobalStyles";
 
 import Home from "./pages/Home";
-
 
 function App() {
   return (
     <div>
+      <GlobalStyles />
       <Switch>
         <Route exact path="/" component={Home} />
       </Switch>
@@ -22,4 +22,3 @@ render(
   </Router>,
   document.getElementById("root")
 );
-

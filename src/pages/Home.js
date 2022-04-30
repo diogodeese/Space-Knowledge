@@ -1,4 +1,4 @@
-import PictureDay from "../components/PictureDay/PictureDay";
+import PictureDay from "../containers/PictureDay";
 
 export default function Home() {
   return (
