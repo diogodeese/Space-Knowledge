@@ -4,7 +4,6 @@ import ReactPlayer from "react-player";
 
 // Styled Components
 import { MainContainer } from "../components/MainContainer.styled";
-import { Input } from "../components/Input.styled";
 
 export default function PictureDay() {
   const { endDate, startDate } = useDate();
@@ -21,7 +20,8 @@ export default function PictureDay() {
             ...Loading | {endDate} - {startDate} |
           </div>
         ) : (
-          <div>
+          <div style={{ textAlign: "center", padding: "100px" }}>
+            <h2>Picture of the Day</h2>
             <h1>{data.title}</h1>
             <h4>{data.explanation}</h4>
 
@@ -32,13 +32,11 @@ export default function PictureDay() {
 
               {data.media_type === "image" && (
                 <div style={{ marginInline: "10%" }}>
-                  <Input></Input>
-
                   <img
                     src={data.url}
                     alt="space-img"
                     style={{
-                      borderRadius: 15,
+                      borderRadius: 5,
                       width: 720,
                       maxHeight: 480,
                     }}
