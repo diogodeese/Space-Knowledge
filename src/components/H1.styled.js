@@ -5,5 +5,5 @@ export const H1 = styled.h1`
   font-size: 126px;
   font-weight: bold;
   font-family: "Radio Canada", sans-serif;
-  border-bottom: 2px solid #4287f5;
+  border-bottom: 2px solid #4269f5;
 `;
