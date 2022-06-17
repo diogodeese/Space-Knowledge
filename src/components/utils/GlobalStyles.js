@@ -20,16 +20,16 @@ const GlobalStyles = createGlobalStyle`
     }
     
     ::-webkit-scrollbar-track {
-        background-color: #1f1f1f;
+        background-color: #121212;
     }
     
     ::-webkit-scrollbar-thumb {
-        background-color: #4287f5;
+        background-color: #474646;
         border-radius: 25px;
     }
     
     ::-webkit-scrollbar-thumb:hover {
-        background-color: #4269f5;
+        background-color: #333232;
     }
 `;
 
