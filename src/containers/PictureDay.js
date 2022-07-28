@@ -37,15 +37,15 @@ export default function PictureDay() {
             <>
               <H3>{data.title}</H3>
               <div style={{ display: "flex", marginTop: "75px" }}>
-                <P style={{ width: "50%" }}>{data.explanation}</P>
+                <P style={{ width: "45%" }}>{data.explanation}</P>
 
-                <div style={{ width: "50%" }}>
+                <div style={{ width: "45%" }}>
                   {data.media_type === "video" && (
                     <ReactPlayer url={data.url} volume="0.05" controls="true" />
                   )}
 
                   {data.media_type === "image" && (
-                    <div style={{ marginInline: "10%" }}>
+                    <div style={{}}>
                       <img
                         src={data.url}
                         alt="space-img"
